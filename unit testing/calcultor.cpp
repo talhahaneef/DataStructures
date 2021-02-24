@@ -30,7 +30,7 @@ class CalculatorTest
 			
 			int result = obj.multiply(a, b);
 			
-			Assert.Equal(expectedResult, result);
+			Assert(expectedResult, result);
 		}
 		
 		void addTest()
@@ -42,6 +42,14 @@ class CalculatorTest
 			
 			int result = obj.add(a, b);
 			
-			Assert.Equal(expectedResult, result);
+			Assert(expectedResult, result);
 		}	
+}
+// Mian Function
+int main()
+{
+	CalculatorTest ct;
+	ct.addTest();
+	ct.multiplyTest();
+	
 }
